@@ -1,0 +1,336 @@
+[
+    {
+        "form": {
+            "items": [
+                {
+                    "type": "filler",
+                    "message": "наполнитель первой формы"
+                } ,
+        
+        {
+          "type": "text",
+          "name": "textName",
+          "placeholder": "образец одностроч текста",
+          "required": "false",
+          "validationRules": {
+            "type": "text"
+          },
+          "value": "",
+          "label": "описание поля для одностроч текста",
+          "class": "textCSS",
+          "disabled": "false"
+        },
+
+        {
+            "type": "textarea",
+            "name": "textareaName",
+            "placeholder": "образец многостроч текста",
+            "required": "false",
+            "validationRules": {
+                "type": "text"
+            },
+            "value": "",
+            "label": "описание поля для многостроч текста",
+            "class": "textareaCSS",
+            "disabled": "false"
+        },
+        {
+            "type": "checkbox",
+            "name": "checkboxName",
+            "placeholder": "",
+            "required": "false",
+            "validationRules": {
+                "type": "checkbox"
+            },
+            "label": "описание чекбокса",
+            "class": "checkboxCSS",
+            "checked": "true",
+            "disabled": "false"
+        },
+        {
+            "type": "button",
+            "text": "описание кнопки",
+            "class": "buttonCSS"
+        },
+        {
+            "type": "select",
+            "name": "selectName",
+            "placeholder": "",
+            "required": "true",
+            "validationRules": {
+                "type": "select"
+            },
+            "label": "описание выпадающего списка",
+            "class": "selectCSS",
+            "disabled": "false",
+            "options": [
+                {
+                    "selected": "true",
+                    "value": "1",
+                    "text": "первый элемент списка"
+                },
+                {
+                    "selected": "false",
+                    "value": "2",
+                    "text": "второй элемент списка"
+                },
+                {
+                    "selected": "false",
+                    "value": "3",
+                    "text": "третий элемент списка"
+                }
+            ]
+        },
+        {
+            "type": "radio",
+            "name": "radioName",
+            "placeholder": "",
+            "required": "true",
+            "validationRules": {
+                "type": "radio"
+            },
+            "label": "описание переключателя",
+            "class": "radioCSS",
+            "disabled": "false", 
+            "items": [
+                {
+                    "checked": "true",
+                    "value": "1",
+                    "label": "первый элемент переключателя"
+                },
+                {
+                    "checked": "false",
+                    "value": "2",
+                    "label": "второй элемент переключателя"
+                },
+                {
+                    "checked": "false",
+                    "value": "3",
+                    "label": "третий элемент переключателя"
+                }
+           
+            ]
+        }
+
+            ],
+      "postmessage": "Первая форма обработана успешно!"
+    },
+    "name": "Имя первой формы"
+  },
+    {
+        "form": {
+            "items": [
+                {
+                    "type": "filler",
+                    "message": "наполнитель второй формы"
+                },
+
+                {
+                    "type": "text",
+                    "name": "textName",
+                    "placeholder": "",
+                    "required": "false",
+                    "validationRules": {
+                        "type": "text"
+                    },
+                    "value": "предустановл значение",
+                    "label": "описание поля для одностроч текста",
+                    "class": "textCSS",
+                    "disabled": "true"
+                },
+
+                {
+                    "type": "textarea",
+                    "name": "textareaName",
+                    "placeholder": "",
+                    "required": "true",
+                    "validationRules": {
+                        "type": "text"
+                    },
+                    "value": "предустановл значение",
+                    "label": "описание поля для многострочного текста",
+                    "class": "textareaCSS",
+                    "disabled": "true"
+                },
+                {
+                    "type": "checkbox",
+                    "name": "checkboxName",
+                    "placeholder": "",
+                    "required": "true",
+                    "validationRules": {
+                        "type": "checkbox"
+                    },
+                    "label": "описание чекбокса",
+                    "class": "checkboxCSS",
+                    "checked": "false",
+                    "disabled": "false"
+                },
+
+                {
+                    "type": "select",
+                    "name": "selectName",
+                    "placeholder": "",
+                    "required": "false",
+                    "validationRules": {
+                        "type": "select"
+                    },
+                    "label": "описание выпадающего списка",
+                    "class": "selectCSS",
+                    "disabled": "false",
+                    "options": [
+                        {
+                            "selected": "false",
+                            "value": "1",
+                            "text": "первый элемент списка"
+                        },
+                        {
+                            "selected": "true",
+                            "value": "2",
+                            "text": "второй элемент списка"
+                        },
+                        {
+                            "selected": "false",
+                            "value": "3",
+                            "text": "третий элемент списка"
+                        }
+                    ]
+                },
+                {
+                    "type": "radio",
+                    "name": "radioName",
+                    "placeholder": "",
+                    "required": "false",
+                    "validationRules": {
+                        "type": "radio"
+                    },
+                    "label": "описание переключателя",
+                    "class": "radioCSS",
+                    "disabled": "true",
+                    "items": [
+                        {
+                            "checked": "false",
+                            "value": "1",
+                            "label": "первый элемент переключателя"
+                        },
+                        {
+                            "checked": "true",
+                            "value": "2",
+                            "label": "второй элемент переключателя"
+                        },
+                        {
+                            "checked": "false",
+                            "value": "3",
+                            "label": "третий элемент переключателя"
+                        }
+
+                    ]
+                }
+
+            ],
+            "postmessage": "Вторая форма обработана успешно!"
+        },
+        "name": "Имя второй формы"
+    },
+    {
+        "form": {
+            "items": [
+
+                {
+                    "type": "text",
+                    "name": "textName",
+                    "placeholder": "example@example.com",
+                    "required": "true",
+                    "validationRules": {
+                        "type": "email"
+                    },
+                    "value": "",
+                    "label": "описание поля для одностроч текста",
+                    "class": "textCSS",
+                    "disabled": "false"
+                },
+
+
+                {
+                    "type": "checkbox",
+                    "name": "checkboxName",
+                    "placeholder": "",
+                    "required": "false",
+                    "validationRules": {
+                        "type": "checkbox"
+                    },
+                    "label": "описание чекбокса",
+                    "class": "checkboxCSS",
+                    "checked": "true",
+                    "disabled": "true"
+                },
+                {
+                    "type": "button",
+                    "text": "описание кнопки",
+                    "class": "buttonCSS"
+                },
+                {
+                    "type": "select",
+                    "name": "selectName",
+                    "placeholder": "",
+                    "required": "true",
+                    "validationRules": {
+                        "type": "select"
+                    },
+                    "label": "описание выпадающего списка",
+                    "class": "selectCSS",
+                    "disabled": "false",
+                    "options": [
+                        {
+                            "selected": "false",
+                            "value": "1",
+                            "text": "первый элемент списка"
+                        },
+                        {
+                            "selected": "false",
+                            "value": "2",
+                            "text": "второй элемент списка"
+                        },
+                        {
+                            "selected": "false",
+                            "value": "3",
+                            "text": "третий элемент списка"
+                        }
+                    ]
+                },
+                {
+                    "type": "radio",
+                    "name": "radioName",
+                    "placeholder": "",
+                    "required": "true",
+                    "validationRules": {
+                        "type": "radio"
+                    },
+                    "label": "описание переключателя",
+                    "class": "radioCSS",
+                    "disabled": "false",
+                    "items": [
+                        {
+                            "checked": "false",
+                            "value": "1",
+                            "label": "первый элемент переключателя"
+                        },
+                        {
+                            "checked": "false",
+                            "value": "2",
+                            "label": "второй элемент переключателя"
+                        },
+                        {
+                            "checked": "false",
+                            "value": "3",
+                            "label": "третий элемент переключателя"
+                        }
+
+                    ]
+                }
+
+            ],
+            "postmessage": "Третья форма обработана успешно!"
+        },
+        "name": "Имя третьей формы"
+    }
+]
