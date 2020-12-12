@@ -1,0 +1,36 @@
+﻿namespace FormGenerator
+{
+    class TextareaItem : Item
+    {
+        public TextareaItem(string name, string placeholder, string required, 
+            ValidationRules validationRules, string value, string label, 
+            string classCSS, string disabled)
+        {
+            Type = "textarea";
+            Name = name;
+            Placeholder = placeholder;
+            Required = required;
+            rules = validationRules;
+            Value = value;
+            Label = label;
+            Class = classCSS;
+            Disabled = disabled;
+        }
+
+        private readonly ValidationRules rules;
+
+        protected override string GetHTML()
+        {
+            string nameText = $"name=\"{Name}\"";
+            string placeholderText = $"placeholder=\"{Placeholder}\"";
+            string requiredText = Required == "true" ? "required" : "";
+            string classCSSText = $"class=\"{Class}\"";
+            string disabledText = Disabled == "true" ? "disabled" : "";
+            string typeText = $"type=\"{rules.Type}\"";
+
+            return $"<label><textarea {placeholderText} {requiredText} " +
+                $"{disabledText} {classCSSText} {nameText}{typeText}>{Value}" +
+                $"</textarea>{Label}</label><br />";
+        }
+    }
+}
