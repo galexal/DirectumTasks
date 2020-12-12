@@ -4,83 +4,83 @@
             "items": [
                 {
                     "type": "filler",
-                    "message": "наполнитель первой формы"
+                    "message": "first form filler"
                 } ,
-        
-        {
-          "type": "text",
-          "name": "textName",
-          "placeholder": "образец одностроч текста",
-          "required": "false",
-          "validationRules": {
-            "type": "text"
-          },
-          "value": "",
-          "label": "описание поля для одностроч текста",
-          "class": "textCSS",
-          "disabled": "false"
-        },
 
-        {
-            "type": "textarea",
-            "name": "textareaName",
-            "placeholder": "образец многостроч текста",
-            "required": "false",
-            "validationRules": {
-                "type": "text"
-            },
-            "value": "",
-            "label": "описание поля для многостроч текста",
-            "class": "textareaCSS",
-            "disabled": "false"
-        },
-        {
-            "type": "checkbox",
-            "name": "checkboxName",
-            "placeholder": "",
-            "required": "false",
-            "validationRules": {
-                "type": "checkbox"
-            },
-            "label": "описание чекбокса",
-            "class": "checkboxCSS",
-            "checked": "true",
-            "disabled": "false"
-        },
-        {
-            "type": "button",
-            "text": "описание кнопки",
-            "class": "buttonCSS"
-        },
-        {
-            "type": "select",
-            "name": "selectName",
-            "placeholder": "",
-            "required": "true",
-            "validationRules": {
-                "type": "select"
-            },
-            "label": "описание выпадающего списка",
-            "class": "selectCSS",
-            "disabled": "false",
-            "options": [
                 {
-                    "selected": "true",
-                    "value": "1",
-                    "text": "первый элемент списка"
+                    "type": "text",
+                    "name": "textName",
+                    "placeholder": "sample single line text",
+                    "required": "false",
+                    "validationRules": {
+                        "type": "text"
+                    },
+                    "value": "",
+                    "label": "field description for single line text",
+                    "class": "textCSS",
+                    "disabled": "false"
+                },
+
+                {
+                    "type": "textarea",
+                    "name": "textareaName",
+                    "placeholder": "multiline text sample",
+                    "required": "false",
+                    "validationRules": {
+                        "type": "text"
+                    },
+                    "value": "",
+                    "label": "field description for multiline text",
+                    "class": "textareaCSS",
+                    "disabled": "false"
                 },
                 {
-                    "selected": "false",
-                    "value": "2",
-                    "text": "второй элемент списка"
+                    "type": "checkbox",
+                    "name": "checkboxName",
+                    "placeholder": "",
+                    "required": "false",
+                    "validationRules": {
+                        "type": "checkbox"
+                    },
+                    "label": "checkbox description",
+                    "class": "checkboxCSS",
+                    "checked": "true",
+                    "disabled": "false"
                 },
                 {
-                    "selected": "false",
-                    "value": "3",
-                    "text": "третий элемент списка"
-                }
-            ]
-        },
+                    "type": "button",
+                    "text": "button description",
+                    "class": "buttonCSS"
+                },
+                {
+                    "type": "select",
+                    "name": "selectName",
+                    "placeholder": "",
+                    "required": "true",
+                    "validationRules": {
+                        "type": "select"
+                    },
+                    "label": "drop-down list description",
+                    "class": "selectCSS",
+                    "disabled": "false",
+                    "options": [
+                        {
+                            "selected": "true",
+                            "value": "1",
+                            "text": "first element of the list"
+                        },
+                        {
+                            "selected": "false",
+                            "value": "2",
+                            "text": "second element of the list"
+                        },
+                        {
+                            "selected": "false",
+                            "value": "3",
+                            "text": "third element of the list"
+                        }
+                    ]
+                },
         {
             "type": "radio",
             "name": "radioName",
@@ -89,40 +89,40 @@
             "validationRules": {
                 "type": "radio"
             },
-            "label": "описание переключателя",
+            "label": "radio description",
             "class": "radioCSS",
             "disabled": "false", 
             "items": [
                 {
                     "checked": "true",
                     "value": "1",
-                    "label": "первый элемент переключателя"
+                    "label": "radio first element"
                 },
                 {
                     "checked": "false",
                     "value": "2",
-                    "label": "второй элемент переключателя"
+                    "label": "radio second element"
                 },
                 {
                     "checked": "false",
                     "value": "3",
-                    "label": "третий элемент переключателя"
+                    "label": "radio third element"
                 }
            
             ]
         }
 
             ],
-      "postmessage": "Первая форма обработана успешно!"
+      "postmessage": "First form processed successfully!"
     },
-    "name": "Имя первой формы"
+    "name": "First form name"
   },
     {
         "form": {
             "items": [
                 {
                     "type": "filler",
-                    "message": "наполнитель второй формы"
+                    "message": "second form filler"
                 },
 
                 {
@@ -133,8 +133,8 @@
                     "validationRules": {
                         "type": "text"
                     },
-                    "value": "предустановл значение",
-                    "label": "описание поля для одностроч текста",
+                    "value": "preset value",
+                    "label": "field description for single line text",
                     "class": "textCSS",
                     "disabled": "true"
                 },
@@ -147,8 +147,8 @@
                     "validationRules": {
                         "type": "text"
                     },
-                    "value": "предустановл значение",
-                    "label": "описание поля для многострочного текста",
+                    "value": "preset value",
+                    "label": "field description for multiline text",
                     "class": "textareaCSS",
                     "disabled": "true"
                 },
@@ -160,7 +160,7 @@
                     "validationRules": {
                         "type": "checkbox"
                     },
-                    "label": "описание чекбокса",
+                    "label": "checkbox description",
                     "class": "checkboxCSS",
                     "checked": "false",
                     "disabled": "false"
@@ -174,24 +174,24 @@
                     "validationRules": {
                         "type": "select"
                     },
-                    "label": "описание выпадающего списка",
+                    "label": "drop-down list description",
                     "class": "selectCSS",
                     "disabled": "false",
                     "options": [
                         {
                             "selected": "false",
                             "value": "1",
-                            "text": "первый элемент списка"
+                            "text": "first element of the list"
                         },
                         {
                             "selected": "true",
                             "value": "2",
-                            "text": "второй элемент списка"
+                            "text": "second element of the list"
                         },
                         {
                             "selected": "false",
                             "value": "3",
-                            "text": "третий элемент списка"
+                            "text": "third element of the list"
                         }
                     ]
                 },
@@ -203,33 +203,33 @@
                     "validationRules": {
                         "type": "radio"
                     },
-                    "label": "описание переключателя",
+                    "label": "radio description",
                     "class": "radioCSS",
                     "disabled": "true",
                     "items": [
                         {
                             "checked": "false",
                             "value": "1",
-                            "label": "первый элемент переключателя"
+                            "label": "radio first element"
                         },
                         {
                             "checked": "true",
                             "value": "2",
-                            "label": "второй элемент переключателя"
+                            "label": "radio second element"
                         },
                         {
                             "checked": "false",
                             "value": "3",
-                            "label": "третий элемент переключателя"
+                            "label": "radio third element"
                         }
 
                     ]
                 }
 
             ],
-            "postmessage": "Вторая форма обработана успешно!"
+            "postmessage": "Second form processed successfully!"
         },
-        "name": "Имя второй формы"
+        "name": "Second form name"
     },
     {
         "form": {
@@ -244,7 +244,7 @@
                         "type": "email"
                     },
                     "value": "",
-                    "label": "описание поля для одностроч текста",
+                    "label": "field description for single line text",
                     "class": "textCSS",
                     "disabled": "false"
                 },
@@ -258,14 +258,14 @@
                     "validationRules": {
                         "type": "checkbox"
                     },
-                    "label": "описание чекбокса",
+                    "label": "checkbox description",
                     "class": "checkboxCSS",
                     "checked": "true",
                     "disabled": "true"
                 },
                 {
                     "type": "button",
-                    "text": "описание кнопки",
+                    "text": "button description",
                     "class": "buttonCSS"
                 },
                 {
@@ -276,24 +276,24 @@
                     "validationRules": {
                         "type": "select"
                     },
-                    "label": "описание выпадающего списка",
+                    "label": "drop-down list description",
                     "class": "selectCSS",
                     "disabled": "false",
                     "options": [
                         {
                             "selected": "false",
                             "value": "1",
-                            "text": "первый элемент списка"
+                            "text": "first element of the list"
                         },
                         {
                             "selected": "false",
                             "value": "2",
-                            "text": "второй элемент списка"
+                            "text": "second element of the list"
                         },
                         {
                             "selected": "false",
                             "value": "3",
-                            "text": "третий элемент списка"
+                            "text": "third element of the list"
                         }
                     ]
                 },
@@ -305,32 +305,32 @@
                     "validationRules": {
                         "type": "radio"
                     },
-                    "label": "описание переключателя",
+                    "label": "radio description",
                     "class": "radioCSS",
                     "disabled": "false",
                     "items": [
                         {
                             "checked": "false",
                             "value": "1",
-                            "label": "первый элемент переключателя"
+                            "label": "radio first element"
                         },
                         {
                             "checked": "false",
                             "value": "2",
-                            "label": "второй элемент переключателя"
+                            "label": "radio second element"
                         },
                         {
                             "checked": "false",
                             "value": "3",
-                            "label": "третий элемент переключателя"
+                            "label": "radio third element"
                         }
 
                     ]
                 }
 
             ],
-            "postmessage": "Третья форма обработана успешно!"
+            "postmessage": "Third form processed successfully!"
         },
-        "name": "Имя третьей формы"
+        "name": "Third form name"
     }
 ]
